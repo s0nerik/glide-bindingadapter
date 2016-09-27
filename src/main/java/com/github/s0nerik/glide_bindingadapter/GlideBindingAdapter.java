@@ -28,9 +28,9 @@ public class GlideBindingAdapter {
             GlideBindingConfig.Provider configProvider;
             DrawableRequestBuilder<?> requestBuilder;
             if ((configProvider = GlideBindingConfig.getProvider(configProviderKey)) != null) {
-                requestBuilder = configProvider.provide(drawableRequest);
+                requestBuilder = configProvider.provide(iv, drawableRequest);
             } else if ((configProvider = GlideBindingConfig.getDefaultProvider()) != null) {
-                requestBuilder = configProvider.provide(drawableRequest);
+                requestBuilder = configProvider.provide(iv, drawableRequest);
             } else {
                 requestBuilder = drawableRequest;
             }

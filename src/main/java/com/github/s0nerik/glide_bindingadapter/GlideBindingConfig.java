@@ -1,6 +1,7 @@
 package com.github.s0nerik.glide_bindingadapter;
 
 import android.support.annotation.NonNull;
+import android.widget.ImageView;
 
 import com.bumptech.glide.DrawableRequestBuilder;
 import com.bumptech.glide.DrawableTypeRequest;
@@ -11,7 +12,7 @@ import java.util.Map;
 public class GlideBindingConfig {
     public interface Provider {
         @NonNull
-        DrawableRequestBuilder<?> provide(DrawableTypeRequest<?> request);
+        DrawableRequestBuilder<?> provide(ImageView target, DrawableTypeRequest<?> request);
     }
 
     private static Map<Object, Provider> providers = new HashMap<>();
