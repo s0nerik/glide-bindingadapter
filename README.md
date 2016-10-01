@@ -2,7 +2,7 @@
 [![](https://jitpack.io/v/s0nerik/glide-bindingadapter.svg)](https://jitpack.io/#s0nerik/glide-bindingadapter)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-glide--bindingadapter-green.svg?style=true)](https://android-arsenal.com/details/1/4426)
 
-`@BindingAdapter` for loading the images with [Glide](https://github.com/bumptech/glide) without writing a single line of code using [Data Binding Library](https://developer.android.com/topic/libraries/data-binding/index.html).
+`@BindingAdapter` for loading images with [Glide](https://github.com/bumptech/glide) without writing a single line of code using [Data Binding Library](https://developer.android.com/topic/libraries/data-binding/index.html).
 
 ## Usage
 Register configuration providers like this:
