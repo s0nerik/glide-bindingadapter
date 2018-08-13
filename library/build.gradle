@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.s0nerik'
+
+android {
+    compileSdkVersion sdk_version
+    buildToolsVersion build_tools_version
+    defaultConfig {
+        minSdkVersion min_sdk
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+}

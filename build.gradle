@@ -1,35 +1,26 @@
 buildscript {
+    ext {
+        android_plugin_version = '3.1.4'
+        sdk_version = 27
+        build_tools_version = "27.0.3"
+        min_sdk = 19
+        target_sdk = 28
+
+        glide_version = "4.7.1"
+    }
     repositories {
+        google()
         jcenter()
-        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4'
+        classpath "com.android.tools.build:gradle:$android_plugin_version"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
-repositories {
-    jcenter()
-    maven { url "https://jitpack.io" }
-}
-
-apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-
-group='com.github.s0nerik'
-
-android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
-    defaultConfig {
-        minSdkVersion 14
+allprojects {
+    repositories {
+        google()
+        jcenter()
     }
-    dataBinding {
-        enabled = true
-    }
-}
-
-dependencies {
-    compile 'com.github.bumptech.glide:glide:3.7.0'
 }

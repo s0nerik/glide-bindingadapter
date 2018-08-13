@@ -1,10 +1,5 @@
-/*
-
-!.gitignore
-!build.gradle
-!gradlew
-!gradlew.bat
-!README.md
-
-!/src
-!/gradle
+.idea
+.gradle
+*.iml
+build
+local.properties

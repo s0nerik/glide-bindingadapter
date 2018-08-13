@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <import type="com.github.s0nerik.glide_bindingadapter.sample.GlideConfig" />
+        <variable
+            name="vm"
+            type="com.github.s0nerik.glide_bindingadapter.sample.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:glideConfig='@{vm.glideConfig}'
+            app:glideImageSrc='@{vm.imageSrc}'
+            />
+
+    </LinearLayout>
+</layout>
